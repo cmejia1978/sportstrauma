@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'AvantGarde-Book';
+    src: url('/assets/fonts/Demi.TTF')  format('truetype')
+}
+/* +------------------------------------------------------------+ */
+/* | General XHTML Elements                                     | */
+/* +------------------------------------------------------------+ */
+
+@page { margin: 140px 50px 90px 50px; }
+
+body {
+    color: #555555;
+    background-color: transparent;
+    font-family: 'AvantGarde-Book', Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    background: url('/assets/images/logo-bg-pdf.png') no-repeat center center;
+}
+
+.page-header { position: fixed; left: 0; top: -105px; right: 0; }
+.page-footer { position: fixed; left: 0; bottom: 20px; right: 0; }
+.break-before { page-break-before: auto; }
+
+table.page-header-content {
+    margin: 0;
+    margin-bottom: 5px;
+    border: 0 solid transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.line-separator {
+    height: 2px;
+    background: #251E2F;
+}
+
+.line-separator.light {
+    background: #a1a1a1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page-header-logo,
+.page-header-text {
+    color: #262936;
+    font-size: 8px;
+    line-height: 1;
+}
+
+.page-header-logo {
+    width: 272px;
+    padding-right: 26px;
+}
+
+.page-header-text {
+    width: 303px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.page-break {
+    page-break-after: always;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+}
+
+ol , ol > li {
+    list-style: none;
+}
+
+ol li:before {
+    content: counter (step-counter);
+    counter-increment: step-counter;
+    margin-left: -20px;
+    margin-right: 10px;
+}
